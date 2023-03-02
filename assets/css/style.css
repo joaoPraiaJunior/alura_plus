@@ -1,0 +1,123 @@
+:root {
+    --branco-principal: #ffffff;
+    --cinza-secundario: #c0c0c0;
+    --botao-azul: #167bf7;
+    --cor-de-fundo: #00030c;
+    --font-principal: 'Inter', sans-serif;
+}
+
+body {
+    color: var(--branco-principal);
+    background-color: var(--cor-de-fundo);
+    font-family: var(--font-principal);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.container {
+    display: grid;
+    padding: 0 96px;
+    height: 100vh;
+}
+
+.conteudo {
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 200px; 
+}
+
+.conteudo--grid-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 100px auto;
+}
+
+.conteudo--background {
+    background-image: url("../../assets/img/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.conteudo--centralizado {
+    text-align: center;
+}
+
+.conteudo__botao {
+    background-color: var(--botao-azul);
+    color: var(--branco-principal);
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 16px;
+}
+
+.conteudo__botao--transparente {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.conteudo__botao--menor {
+    display: inline-block;
+}
+
+.conteudo__titulo-primario {
+    font-size: 1.5rem;
+}
+
+.conteudo__aviso {
+    color: var(--cinza-secundario);
+    font-size: .75rem;
+}
+
+.principal__imagem {
+    margin: 16px 0 32px 0;
+}
+
+.conteudo__titulo-secundario {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.conteudo__titulo-secundario--full {
+    grid-column: 1/4;
+}
+
+.conteudo__descricao {
+    color: var(--cinza-secundario);
+    margin-bottom: 15px;
+}
+
+.conteudo__imagem {
+    width: 100%;
+}
+
+.rodape {
+    text-align: center;
+    padding: 0 96px;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 30px 0;
+}
+
+.rodape__lista a {
+    font-weight: lighter;
+    color: var(--branco-principal);
+    text-decoration: none;
+}
+
+.rodape__lista a:hover {
+    color: var(--botao-azul);
+}
+
+.rodape__info {
+    font-weight: lighter;
+    color: var(--cinza-secundario);
+    margin-bottom: 30px;
+}
